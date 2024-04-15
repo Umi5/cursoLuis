@@ -894,6 +894,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Curso.Buisness/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FastEndpoints.Swagger": "5.24.0"
+        },
+        "compile": {
+          "bin/placeholder/Curso.Buisness.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Curso.Buisness.dll": {}
+        }
       }
     }
   },
@@ -3346,10 +3359,16 @@
         "yamldotnet.13.7.1.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
+    },
+    "Curso.Buisness/1.0.0": {
+      "type": "project",
+      "path": "../Curso.Buisness/Curso.Buisness.csproj",
+      "msbuildProject": "../Curso.Buisness/Curso.Buisness.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Curso.Buisness >= 1.0.0",
       "FastEndpoints >= 5.24.0",
       "FastEndpoints.Swagger >= 5.24.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.3",
@@ -3380,7 +3399,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Buisness\\Curso.Buisness.csproj": {
+              "projectPath": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Buisness\\Curso.Buisness.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
