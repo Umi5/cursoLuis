@@ -1,44 +1,35 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Ardalis.Result.AspNetCore;
+using Curso.Bussiness.Features.Clients.Queries.GetAllClients;
 using FastEndpoints;
 using FluentValidation;
-using Microsoft.AspNetCore.Http.HttpResults;
+using MediatR;
 
 namespace Curso.Api.Endpoints.Clients;
-public class GetAllClientsEndpoint 
+
+public class GetAllClientsEndpoint
     : Endpoint<GetAllClientsRequest, IEnumerable<GetAllClientsResponse>>
 {
-  public override void Configure()
-  {
-    Get("/api/clients/GetAllClients");
-    AllowAnonymous();
-  }
+    private readonly ISender mediator;
 
-  public override async Task HandleAsync(GetAllClientsRequest request, CancellationToken ct)
-  {
-
-    GetAllClientsResponse[] response = [
-        new GetAllClientsResponse {Id = Guid.NewGuid(), Name = "Manu"},
-        new GetAllClientsResponse {Id = Guid.NewGuid(), Name = "Luis"},
-    ];
-    await SendOkAsync(response.Where(x => 
-        request.NameFilter == null || x.Name.Contains(request.NameFilter, StringComparison.InvariantCultureIgnoreCase)));    
-  }
-}
-
-public class GetAllClientsRequestValidator : Validator<GetAllClientsRequest>
-{
-    public GetAllClientsRequestValidator()
+    public GetAllClientsEndpoint(ISender mediator)
     {
-        RuleFor(x => x.NameFilter)
-            .MaximumLength(10)
-            .When(x => x.NameFilter != null)
-            .WithMessage("El filtro de nombre no puede tener más de 10 caracteres.")
-            .MinimumLength(1)
-            .When(x => x.NameFilter != null)
-            .WithMessage("El filtro de nombre no puede estar vacío.");
+        this.mediator = mediator;
+    }
+
+    public override void Configure()
+    {
+        Get("/api/clients/getAllClients");
+        AllowAnonymous();
+    }
+
+    public override async Task HandleAsync(GetAllClientsRequest request, CancellationToken ct)
+    {
+        var result = await mediator.Send(
+            new GetAllClientsQuery { Request = request },
+            cancellationToken: ct
+        );
+
+        await SendResultAsync(result.ToMinimalApiResult());
     }
 }
 
@@ -73,13 +64,4 @@ public class GetAllClientsEndpointSwagger : Summary<GetAllClientsEndpoint>
             }
         );
     }
-}
-
-public class GetAllClientsRequest{
-    public string? NameFilter { get; set; }
-}
-
-public class GetAllClientsResponse {
-    public Guid Id { get; set; }
-    public string Name { get; set; } = String.Empty;
 }

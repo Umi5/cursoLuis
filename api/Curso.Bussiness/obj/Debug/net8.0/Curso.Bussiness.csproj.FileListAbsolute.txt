@@ -1,0 +1,12 @@
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/bin/Debug/net8.0/Curso.Bussiness.deps.json
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/bin/Debug/net8.0/Curso.Bussiness.dll
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/bin/Debug/net8.0/Curso.Bussiness.pdb
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/Curso.Bussiness.csproj.AssemblyReference.cache
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/Curso.Bussiness.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/Curso.Bussiness.AssemblyInfoInputs.cache
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/Curso.Bussiness.AssemblyInfo.cs
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/Curso.Bussiness.csproj.CoreCompileInputs.cache
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/Curso.Bussiness.dll
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/refint/Curso.Bussiness.dll
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/Curso.Bussiness.pdb
+/Users/luis/Dev/Proyectos/NTT/Curso/webapp/api/Curso.Bussiness/obj/Debug/net8.0/ref/Curso.Bussiness.dll
