@@ -10,6 +10,8 @@ builder.Services.AddFastEndpoints().SwaggerDocument(opt => {
 var app = builder.Build();
 
 
-app.UseFastEndpoints().UseSwaggerGen();
+app.UseFastEndpoints().UseSwaggerGen(uiConfig: opt => {
+    opt.DefaultModelsExpandDepth = -1;
+});
 
 app.Run();

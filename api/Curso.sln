@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Api", "Curso.Api\Curso.Api.csproj", "{848B587B-2432-4451-BFCC-227A390BFE3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Buisness", "Curso.Buisness\Curso.Buisness.csproj", "{3D63C7B8-85CD-4A89-8294-7D350B2DB7F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{848B587B-2432-4451-BFCC-227A390BFE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848B587B-2432-4451-BFCC-227A390BFE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{848B587B-2432-4451-BFCC-227A390BFE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D63C7B8-85CD-4A89-8294-7D350B2DB7F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D63C7B8-85CD-4A89-8294-7D350B2DB7F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D63C7B8-85CD-4A89-8294-7D350B2DB7F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D63C7B8-85CD-4A89-8294-7D350B2DB7F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
