@@ -20,8 +20,7 @@ public class GetAllClientsHandler(CursoDbContext dbContext)
                 .Where(x =>
                     query.Request.NameFilter == null
                     || x.Name.Contains(
-                        query.Request.NameFilter,
-                        StringComparison.InvariantCultureIgnoreCase
+                        query.Request.NameFilter
                     )
                 )
                 .Select(x => new GetAllClientsResponse
