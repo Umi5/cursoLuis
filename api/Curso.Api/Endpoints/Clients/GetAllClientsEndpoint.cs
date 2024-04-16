@@ -1,5 +1,5 @@
 using Ardalis.Result.AspNetCore;
-using Curso.Bussiness.Features.Clients.Queries.GetAllClients;
+using Curso.Business.Features.Clients.Queries.GetAllClients;
 using FastEndpoints;
 using FluentValidation;
 using MediatR;
@@ -41,15 +41,22 @@ public class GetAllClientsEndpointSwagger : Summary<GetAllClientsEndpoint>
         Summary = "Este endpoint devuelve una lista de usuarios filtrados.";
         Description =
             "El endpoint pude filtrar por los nombres que contengan la cadena de texto opcional que se pasa por parámetro.";
-        ExampleRequest = new GetAllClientsRequest { NameFilter = "uis" };
+        ExampleRequest = new GetAllClientsRequest
+        {
+            Filter = "uis",
+            OrderBy = "name",
+            OrderDirection = "asc",
+            PageNumber = 1,
+            PageSize = 10
+        };
         Response<IEnumerable<GetAllClientsResponse>>(
             200,
-            "Devuelve la lista filtrada correctamente.",
-            example:
-            [
-                new GetAllClientsResponse { Id = Guid.NewGuid(), Name = "Manolo" },
-                new GetAllClientsResponse { Id = Guid.NewGuid(), Name = "Cristina" }
-            ]
+            "Devuelve la lista filtrada correctamente."
+        // example:
+        // [
+        //     new GetAllClientsResponse { Id = Guid.NewGuid(), Name = "Manolo" },
+        //     new GetAllClientsResponse { Id = Guid.NewGuid(), Name = "Cristina" }
+        // ]
         );
         Response<ErrorResponse>(
             400,

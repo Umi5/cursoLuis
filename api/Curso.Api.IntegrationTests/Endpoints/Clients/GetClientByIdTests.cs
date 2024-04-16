@@ -1,6 +1,6 @@
 using System.Net;
 using Curso.Api.Endpoints.Clients;
-using Curso.Bussiness.Features.Clients.Queries.GetClientById;
+using Curso.Business.Features.Clients.Queries.GetClientById;
 using FastEndpoints;
 using FastEndpoints.Testing;
 using Microsoft.EntityFrameworkCore;

@@ -3176,7 +3176,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Curso.Bussiness": "1.0.0",
+          "Curso.Business": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.3",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -3190,7 +3190,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Curso.Bussiness/1.0.0": {
+      "Curso.Business/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -3205,10 +3205,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2"
         },
         "compile": {
-          "bin/placeholder/Curso.Bussiness.dll": {}
+          "bin/placeholder/Curso.Business.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Curso.Bussiness.dll": {}
+          "bin/placeholder/Curso.Business.dll": {}
         }
       }
     }
@@ -9252,10 +9252,10 @@
       "path": "../Curso.Api/Curso.Api.csproj",
       "msbuildProject": "../Curso.Api/Curso.Api.csproj"
     },
-    "Curso.Bussiness/1.0.0": {
+    "Curso.Business/1.0.0": {
       "type": "project",
-      "path": "../Curso.Bussiness/Curso.Bussiness.csproj",
-      "msbuildProject": "../Curso.Bussiness/Curso.Bussiness.csproj"
+      "path": "../Curso.Business/Curso.Business.csproj",
+      "msbuildProject": "../Curso.Business/Curso.Business.csproj"
     }
   },
   "projectFileDependencyGroups": {

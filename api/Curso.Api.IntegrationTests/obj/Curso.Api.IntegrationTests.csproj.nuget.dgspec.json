@@ -110,8 +110,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Bussiness\\Curso.Bussiness.csproj": {
-                "projectPath": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Bussiness\\Curso.Bussiness.csproj"
+              "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Business\\Curso.Business.csproj": {
+                "projectPath": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Business\\Curso.Business.csproj"
               }
             }
           }
@@ -169,14 +169,14 @@
         }
       }
     },
-    "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Bussiness\\Curso.Bussiness.csproj": {
+    "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Business\\Curso.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Bussiness\\Curso.Bussiness.csproj",
-        "projectName": "Curso.Bussiness",
-        "projectPath": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Bussiness\\Curso.Bussiness.csproj",
+        "projectUniqueName": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Business\\Curso.Business.csproj",
+        "projectName": "Curso.Business",
+        "projectPath": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Business\\Curso.Business.csproj",
         "packagesPath": "C:\\Users\\mbusquie\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Bussiness\\obj\\",
+        "outputPath": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mbusquie\\AppData\\Roaming\\NuGet\\NuGet.Config"

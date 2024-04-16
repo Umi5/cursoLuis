@@ -1,5 +1,5 @@
-using Curso.Bussiness.Data.DbContexts;
-using Curso.Bussiness.Data.Entities;
+using Curso.Business.Data.DbContexts;
+using Curso.Business.Data.Entities;
 using FastEndpoints.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -24,7 +24,7 @@ public class IntegrationTestsFixture : AppFixture<Program>
         Client[] clients =
         [
             Curso
-                .Bussiness.Data.Entities.Client.CreateClient(
+                .Business.Data.Entities.Client.CreateClient(
                     Guid.NewGuid(),
                     "John Doe",
                     "jhon@gmail.com",
@@ -32,7 +32,7 @@ public class IntegrationTestsFixture : AppFixture<Program>
                 )
                 .Value,
             Curso
-                .Bussiness.Data.Entities.Client.CreateClient(
+                .Business.Data.Entities.Client.CreateClient(
                     Guid.NewGuid(),
                     "Jane Doe",
                     "jane@gmail.com",

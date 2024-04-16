@@ -1,0 +1,61 @@
+<nz-button-group class="w-2/3 mb-6">
+  <nz-input-group [nzSuffix]="suffixIconSearch">
+    <input
+      type="text"
+      [(ngModel)]="searchText"
+      maxlength="20"
+      nz-input
+      placeholder="search clients by name or email..."
+      (input)="onSearch($event)"
+    />
+  </nz-input-group>
+  <ng-template #suffixIconSearch>
+    <span nz-icon nzType="search"></span>
+  </ng-template>
+</nz-button-group>
+<nz-table
+  class="w-full"
+  [nzData]="clients"
+  [nzFrontPagination]="false"
+  [nzLoading]="loading()"
+  [nzTotal]="totalRows()"
+  [nzPageSize]="filterInfo().pageSize"
+  [nzPageIndex]="filterInfo().pageIndex"
+  (nzQueryParams)="onQueryParamsChange($event)"
+>
+  <thead>
+    <tr>
+      <th
+        nzColumnKey="name"
+        [nzSortFn]="true"
+        [nzSortDirections]="['ascend', 'descend']"
+        nzSortOrder="ascend"
+      >
+        Name
+      </th>
+      <th
+        nzColumnKey="email"
+        [nzSortFn]="true"
+        [nzSortDirections]="['ascend', 'descend']"
+      >
+        Email
+      </th>
+      <th
+        nzColumnKey="birthDate"
+        [nzSortFn]="true"
+        [nzSortDirections]="['ascend', 'descend']"
+      >
+        BirthDate
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (client of clients; track client.id) {
+    <tr>
+      <td>{{ client.name }}</td>
+      <td>{{ client.email }}</td>
+      <td>{{ client.birthDate | date : "dd/MM/yyyy" }}</td>
+    </tr>
+    }
+  </tbody>
+</nz-table>

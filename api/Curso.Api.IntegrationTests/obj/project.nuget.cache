@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "75emaKRc2UFJO0rKR11fr3sdAnc4xfd0caql48X3qpC+s+BWfGm/uuWzaWcW/HuPbLXmdOt1zqsel3dfgTq+mg==",
+  "dgSpecHash": "Od73KPeoqThAQ9HtYMo/Ac6OtXcvefwcADQBZdSpLwigZDA5AQTVYaTKMtTO5qULTbeSjPmiQ5+FMACxfh525Q==",
   "success": true,
   "projectFilePath": "C:\\Dev\\.NET\\net-angular-app\\webapi\\api\\Curso.Api.IntegrationTests\\Curso.Api.IntegrationTests.csproj",
   "expectedPackageFiles": [

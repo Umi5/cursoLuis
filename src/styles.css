@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@layer {
+    @tailwind base;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.ant-table-thead > tr > th  {
+    font-weight: 600 !important;
+}
+
+.ant-table-column-sorter-down, .ant-table-column-sorter-up {
+    font-size: 13px;
+}
+
+.ant-message-custom-content {
+    font-size: 16px;
+}

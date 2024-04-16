@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Api", "Curso.Api\Curso.Api.csproj", "{26D0F626-D30C-490E-AB68-D1BBC877A55B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Bussiness", "Curso.Bussiness\Curso.Bussiness.csproj", "{B2B9EAB1-46EB-4E2E-B33D-70D953752953}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Business", "Curso.Business\Curso.Business.csproj", "{B2B9EAB1-46EB-4E2E-B33D-70D953752953}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Api.IntegrationTests", "Curso.Api.IntegrationTests\Curso.Api.IntegrationTests.csproj", "{29F91BBC-09AE-4A53-AAB4-23545E5FF92D}"
 EndProject

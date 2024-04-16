@@ -1,5 +1,5 @@
-using Curso.Bussiness.Data.DbContexts;
-using Curso.Bussiness.Features.Clients.Queries.GetAllClients;
+using Curso.Business.Data.DbContexts;
+using Curso.Business.Features.Clients.Queries.GetAllClients;
 using FastEndpoints;
 using FastEndpoints.Swagger;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +23,17 @@ builder.Services.AddDbContext<CursoDbContext>(opt =>
     opt.UseSnakeCaseNamingConvention();
 });
 
+builder.Services.AddCors(opt =>
+{
+    opt.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyMethod();
+        policy.AllowAnyHeader();
+        policy.AllowCredentials();
+        policy.WithOrigins("http://localhost:4200");
+    });
+});
+
 var app = builder.Build();
 
 app.UseFastEndpoints()
@@ -30,6 +41,8 @@ app.UseFastEndpoints()
     {
         opt.DefaultModelsExpandDepth = -1;
     });
+
+app.UseCors();
 
 app.Run();
 

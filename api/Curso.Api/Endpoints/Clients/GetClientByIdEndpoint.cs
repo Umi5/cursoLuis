@@ -1,5 +1,5 @@
 using Ardalis.Result.AspNetCore;
-using Curso.Bussiness.Features.Clients.Queries.GetClientById;
+using Curso.Business.Features.Clients.Queries.GetClientById;
 using FastEndpoints;
 using MediatR;
 
