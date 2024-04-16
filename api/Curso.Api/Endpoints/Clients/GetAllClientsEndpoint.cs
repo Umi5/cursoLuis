@@ -3,6 +3,7 @@ using Curso.Bussiness.Features.Clients.Queries.GetAllClients;
 using FastEndpoints;
 using FluentValidation;
 using MediatR;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Curso.Api.Endpoints.Clients;
 

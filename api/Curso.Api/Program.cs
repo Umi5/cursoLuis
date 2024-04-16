@@ -1,6 +1,8 @@
+using Curso.Bussiness.Data.DbContexts;
 using Curso.Bussiness.Features.Clients.Queries.GetAllClients;
 using FastEndpoints;
 using FastEndpoints.Swagger;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder
@@ -15,6 +17,12 @@ builder.Services.AddMediatR(opt =>
     opt.RegisterServicesFromAssembly(typeof(GetAllClientsRequest).Assembly)
 );
 
+builder.Services.AddDbContext<CursoDbContext>(opt =>
+{
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("CursoDb"));
+    opt.UseSnakeCaseNamingConvention();
+});
+
 var app = builder.Build();
 
 app.UseFastEndpoints()
@@ -24,3 +32,5 @@ app.UseFastEndpoints()
     });
 
 app.Run();
+
+public partial class Program { }

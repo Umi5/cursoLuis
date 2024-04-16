@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Api", "Curso.Api\Curs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Bussiness", "Curso.Bussiness\Curso.Bussiness.csproj", "{B2B9EAB1-46EB-4E2E-B33D-70D953752953}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso.Api.IntegrationTests", "Curso.Api.IntegrationTests\Curso.Api.IntegrationTests.csproj", "{29F91BBC-09AE-4A53-AAB4-23545E5FF92D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{B2B9EAB1-46EB-4E2E-B33D-70D953752953}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2B9EAB1-46EB-4E2E-B33D-70D953752953}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2B9EAB1-46EB-4E2E-B33D-70D953752953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F91BBC-09AE-4A53-AAB4-23545E5FF92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F91BBC-09AE-4A53-AAB4-23545E5FF92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F91BBC-09AE-4A53-AAB4-23545E5FF92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F91BBC-09AE-4A53-AAB4-23545E5FF92D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

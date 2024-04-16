@@ -13,11 +13,16 @@ public class Client
 
     private Client() { }
 
-    public static Result<Client> CreateClient(string name, string email, DateTime birthDate)
+    public static Result<Client> CreateClient(
+        Guid id,
+        string name,
+        string email,
+        DateTime birthDate
+    )
     {
         var newClient = new Client
         {
-            Id = Guid.NewGuid(),
+            Id = id,
             Name = name,
             Email = email,
             BirthDate = birthDate
